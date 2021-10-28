@@ -1,0 +1,106 @@
+.App {
+    position: relative;
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+}
+.banner {
+    height: 35vh;
+    background-image:  linear-gradient(to right, rgba(54, 214, 62, 0.794), rgba(53, 201, 157, 0.794), rgba(32, 155, 212, 0.794)),url("../img/mountain.jpg");
+    background-position: center;
+}
+h1{
+    color: brown;
+}
+.banner-img {
+    height: 20%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+    margin-top: -22.5vh;
+}
+
+.header {
+    color: white;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.342);
+}
+
+.input-container {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    border: none;
+    width: 90%
+}
+
+.input:focus {
+    outline: none;
+}
+
+.add-btn {
+    border: none;
+    padding: 0.3rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(53, 201, 157);
+    color: white;
+    font-weight: 900;
+}
+
+.todolist-container {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todos-container {
+    overflow: auto;
+    height: 90%;
+}
+
+.todo-item {
+    border-bottom: .05rem solid rgba(0, 0, 0, 0.082);
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.todo-item-active {
+    text-decoration: line-through;
+    color: grey
+}
+
+.todo-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-footer p {
+    font-weight: 600;
+    color: grey
+}
+
+.todo-footer a {
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+}
