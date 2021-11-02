@@ -6,20 +6,31 @@
     <link th:href="@{/styles/main.css}" rel="stylesheet" />
 </head>
 <body>
-    <div class="banner">
-        <h1>TODO</h1>
+<div class="App">
+    <div class="banner" >
+
     </div>
     <div>
-        <input placeholder="Add a new task here...">
-        <button>Add</button>
+
+        <div class="todo">
+            <h1 class="header">Todo</h1>
+            <div class="input-container">
+                <input class="input" placeholder="Add a new task here...">
+                <button type="submit" class="add-btn"> Add</button>
+            </div>
+            <div class="todolist-container">
+                <div class="todos-container">
+                    <p> buy milk</p>
+
+                </div>
+                <div>
+                    <div class="todo-footer">
+                        <p>1 task left</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div>
-        <p>buy milk</p>
-        <p>1 task left</p>
-
-    </div>
-
-
+</div>
 </body>
 </html>
