@@ -19,8 +19,8 @@
                 <button type="submit" class="add-btn"> Add</button>
             </div>
             <div class="todolist-container">
-                <div class="todos-container">
-                    <p> buy milk</p>
+                <div th:each="task : ${tasks}" class="todos-container">
+                    <p th:text="${task.taskName}"> buy milk</p>
 
                 </div>
                 <div>
