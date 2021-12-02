@@ -14,10 +14,12 @@
 
         <div class="todo">
             <h1 class="header">Todo</h1>
-            <div class="input-container">
-                <input class="input" placeholder="Add a new task here...">
-                <button type="submit" class="add-btn"> Add</button>
-            </div>
+            <form action="/todo" method="post">
+                <div class="input-container">
+                        <input class="input" name="taskName" placeholder="Add a new task here...">
+                        <button type="submit" class="add-btn"> Add</button>
+                </div>
+            </form>
             <div class="todolist-container">
                 <div th:each="task : ${tasks}" class="todos-container">
                     <p th:text="${task.taskName}"> buy milk</p>
