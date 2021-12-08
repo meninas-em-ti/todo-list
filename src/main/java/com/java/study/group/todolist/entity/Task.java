@@ -1,4 +1,4 @@
-package com.java.study.group.todolist.dto;
+package com.java.study.group.todolist.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
